@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ar"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>المسبحة الالكترونيه</title> 
+  <link rel="stylesheet" href="style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    width: 300px;
+}
+
+.header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.counter-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #00aaff;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.7);
+}
+
+.btn {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0088cc;
+}
+
+.reset {
+    background-color: #ff4444;
+}
+
+.reset:hover {
+    background-color: #cc0000;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd700;
+}</style></head> 
+ <body> 
+  <div class="container"> 
+   <h2 class="header"></h2> 
+   <h1>المسبحة الإلكترونية</h1> 
+   <div class="counter-circle"> <span id="counter">0</span> 
+   </div> <button class="btn" onclick="increaseCount()">تسبيح</button> <button class="btn reset" onclick="resetCount()">إعادة التصفير</button> 
+   <p class="footer"> <br>اهداء ثوابها إلى المرحوم<span class="name"></span><br>سيد صلاح حسن الموسوي
+   </p> 
+  </div> 
+  <script src="script.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">let count = 0;
+
+function increaseCount() {
+    count++;
+    document.getElementById("counter").textContent = count;
+}
+
+function resetCount() {
+    count = 0;
+    document.getElementById("counter").textContent = count;
+}</script></body></html>
